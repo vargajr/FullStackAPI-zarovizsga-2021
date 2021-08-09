@@ -30,7 +30,7 @@ const ServiceSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('customer', ServiceSchema);
+module.exports = mongoose.model('service', ServiceSchema);
 
 /*
 export class Service {
