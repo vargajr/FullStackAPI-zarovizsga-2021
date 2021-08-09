@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 // Router.
 app.use('/cars', require('./controllers/car/routes'));
 app.use('/customers', require('./controllers/customer/routes'));
-app.use('/races', (req, res) => res.json([]));
+app.use('/races', require('./controllers/race/routes'));
 app.use('/services', require('./controllers/service/routes'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
